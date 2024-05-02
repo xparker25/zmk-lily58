@@ -60,7 +60,7 @@
             //                             |      |       |      |       |  |         |      |       |       |
             bindings = <
                &trans    &trans     &trans     &trans             &trans     &trans                        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4    &trans
-               &trans    &trans     &kp AMPS   &kp KP_MULTIPLY    &trans     &trans                        &kp BT_CLR    &trans        &trans         &trans         &trans          &trans
+               &trans    &trans     &kp AMPS   &kp KP_MULTIPLY    &trans     &trans                        &bt BT_CLR    &trans        &trans         &trans         &trans          &trans
                &trans    &kp EXCL   &kp DOLLAR &kp PRCNT          &kp CARET  &trans                        &trans        &trans        &trans         &trans         &trans          &trans
                &trans    &trans     &kp EXCL   &kp AT             &kp HASH   &trans    &kp LBRC  &kp RBRC  &trans        &trans        &trans         &trans         &trans          &trans
                                                &trans              &trans    &trans    &trans    &trans    &trans        &trans        &trans    

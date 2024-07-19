@@ -19,7 +19,7 @@
             // |  ESC    |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |  BSPC |
             // |  TAB    |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |  BSPC |
             // |  CAPS   |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-            // |  SHFT   |  Z  |  X  |  C   |  V   |  B   |    (   |  |   )   |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+            // |  SHFT   |  Z  |  X  |  C   |  V   |  B   |  LPAR  |  |  RPAR |  N   |  M    |  ,    |  .   |   /   | SHIFT |
             //                        | GUI | CTRL | LOWER|  ENTER |  | SPACE | RAISE|   ALT |  GUI  |
 
             bindings = <
@@ -37,15 +37,15 @@
             // |  ESC    |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |   F7  |   F8  |  F9  |  F10  |  F11  |
             // |  DEL    |  *  |  7  |  8   |  9   |   +  |                   |      |       |  UP   |      |       |       |
             // |  CAPS   |  /  |  4  |  5   |  6   |   -  |                   |      |  LFT  |  DOWN | RGT  |       |       |
-            // |   =     |  0  |  1  |  2   |  3   |   .  |    [   |  |   ]   |      |       |       |      |       |       |
+            // |   =     |  0  |  1  |  2   |  3   |   .  |  LBRR  |  | RBKR  |      |       |       |      |       |       |
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-           &trans    &kp F1          &kp F2  &kp F3  &kp F4  &kp F5                          &kp F6  &kp F7   &kp F8   &kp F9    &kp F10 &kp F11
-           &kp DEL   &kp KP_MULTIPLY &kp N7  &kp N8  &kp N9  &kp PLUS                        &trans  &trans   &kp UP   &trans    &trans  &trans
-           &trans    &kp FSLH        &kp N4  &kp N5  &kp N6  &kp MINUS                       &trans  &kp LEFT &kp DOWN &kp RIGHT &trans  &trans
-           &kp EQUAL &kp N0          &kp N1  &kp N2  &kp N3  &kp DOT   &kp LBKR   &kp RBKT   &trans  &trans   &trans   &trans    &trans  &trans
-                                             &trans  &trans  &trans    &trans     &trans     &trans  &trans   &trans
+           &trans    &kp F1       &kp F2  &kp F3  &kp F4  &kp F5                          &kp F6  &kp F7   &kp F8   &kp F9    &kp F10 &kp F11
+           &kp DEL   &kp MULTIPLY &kp N7  &kp N8  &kp N9  &kp PLUS                        &trans  &trans   &kp UP   &trans    &trans  &trans
+           &trans    &kp FSLH     &kp N4  &kp N5  &kp N6  &kp MINUS                       &trans  &kp LEFT &kp DOWN &kp RIGHT &trans  &trans
+           &kp EQUAL &kp N0       &kp N1  &kp N2  &kp N3  &kp DOT   &kp LBKR   &kp RBKT   &trans  &trans   &trans   &trans    &trans  &trans
+                                          &trans  &trans  &trans    &trans     &trans     &trans  &trans   &trans
             >;
 
 
@@ -56,7 +56,7 @@
             // |  ESC   |         |        |      |       |      |                    |  BT1 |  BT2  |  BT3  | BT4  |  BT5  |       |
             // |  TAB   |         |    &   |   *  |       |      |                    |  BTC |       |       |      |       |       |
             // |  CAPS  |  !      |    $   |   %  |   ^   |      |                    |      |       |       |      |       |       |
-            // |  SHFT  |         |    !   |   @  |   #   |      |   {   |  |    }    |      |       |       |      |       |       |
+            // |  SHFT  |         |    !   |   @  |   #   |      |  LBRC  |  |  RBRC  |      |       |       |      |       |       |
             //                             |      |       |      |       |  |         |      |       |       |
             bindings = <
                &trans    &trans     &trans     &trans             &trans     &trans                        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4    &trans

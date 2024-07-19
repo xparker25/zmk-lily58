@@ -34,10 +34,10 @@
 
         lower_layer {
             // ------------------------------------------------------------------------------------------------------------
-            // |  ESC    |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |   F7  |   F8  |  F9  |  F10  |  F11  |
-            // |  DEL    |  *  |  7  |  8   |  9   |   +  |                   |      |       |  UP   |      |       |       |
+            // |  ESC    |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |   F7  |   F8  |  F9  |  F10  |  BSPC |
+            // |  DEL    |  *  |  7  |  8   |  9   |   +  |                   |      |       |  UP   |      |       |  BSPC |
             // |  CAPS   |  /  |  4  |  5   |  6   |   -  |                   |      |  LFT  |  DOWN | RGT  |       |       |
-            // |   =     |  0  |  1  |  2   |  3   |   .  |  LBKT  |  | RBKT  |      |       |       |      |       |       |
+            // |   =     |  0  |  1  |  2   |  3   |   .  |  LBKT  |  | RBKT  |      |       |       |      |       | SHIFT |
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
@@ -53,17 +53,17 @@
 
         raise_layer {
             // ------------------------------------------------------------------------------------------------------------
-            // |  ESC   |         |        |      |       |      |                    |  BT1 |  BT2  |  BT3  | BT4  |  BT5  |       |
-            // |  TAB   |         |    &   |   *  |       |      |                    |  BTC |       |       |      |       |       |
-            // |  CAPS  |  !      |    $   |   %  |   ^   |      |                    |      |       |       |      |       |       |
-            // |  SHFT  |         |    !   |   @  |   #   |      |  LBRC  |  |  RBRC  |      |       |       |      |       |       |
+            // |  ESC   |         |        |      |       |      |                    |  BT1 |  BT2  |  BT3  | BT4  |  BT5  | BSPC  |
+            // |  TAB   |         |    &   |   *  |       |      |                    |  BTC |       |       |      |       | BSPC  |
+            // |  CAPS  |  !      |    $   |   %  |   ^   |      |                    |   -  |       |       |      |       |       |
+            // |  SHFT  |         |    !   |   @  |   #   |      |  LBRC  |  |  RBRC  |   _  |       |       |      |       | SHIFT |
             //                             |      |       |      |       |  |         |      |       |       |
             bindings = <
              &kp ESC    &none     &none     &none          &none      &none                        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4    &kp BSPC
              &kp TAB    &none     &kp AMPS   &kp STAR      &none      &none                        &bt BT_CLR    &none         &none          &none          &none           &kp BSPC
-             &kp CAPS   &kp EXCL  &kp DOLLAR &kp PRCNT     &kp CARET  &none                        &none         &none         &none          &none          &none           &none
-             &kp LSHFT  &none     &kp EXCL   &kp AT        &kp HASH   &none    &kp LBRC  &kp RBRC  &none         &none         &none          &none          &none           &kp RSHFT
-                                               &kp LGUI     &kp LCTRL  &to 1    &kp RET   &kp SPACE &to 0         &kp LALT      &kp RGUI   
+             &kp CAPS   &kp EXCL  &kp DOLLAR &kp PRCNT     &kp CARET  &none                        &kp MINUS     &none         &none          &none          &none           &none
+             &kp LSHFT  &none     &kp EXCL   &kp AT        &kp HASH   &none    &kp LBRC  &kp RBRC  &kp UNDER     &none         &none          &none          &none           &kp RSHFT
+                                               &kp LGUI     &kp LCTRL  &to 1    &kp RET   &kp SPACE &to 0        &kp LALT      &kp RGUI   
             >;
 
 

@@ -41,11 +41,11 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-           &trans    &kp F1       &kp F2  &kp F3  &kp F4  &kp F5                          &kp F6  &kp F7   &kp F8   &kp F9    &kp F10 &kp F11
-           &kp DEL   &kp STAR     &kp N7  &kp N8  &kp N9  &kp PLUS                        &trans  &trans   &kp UP   &trans    &trans  &trans
-           &trans    &kp SLASH    &kp N4  &kp N5  &kp N6  &kp MINUS                       &trans  &kp LEFT &kp DOWN &kp RIGHT &trans  &trans
-           &kp EQUAL &kp N0       &kp N1  &kp N2  &kp N3  &kp DOT   &kp LBKR   &kp RBKT   &trans  &trans   &trans   &trans    &trans  &trans
-                                          &trans  &trans  &trans    &trans     &trans     &trans  &trans   &trans
+           &kp ESC   &kp F1       &kp F2  &kp F3   &kp F4    &kp F5                          &kp F6 &kp F7   &kp F8   &kp F9    &kp F10 &kp BSPC
+           &kp DEL   &kp STAR     &kp N7  &kp N8   &kp N9    &kp PLUS                        &none  &none    &kp UP   &none     &none   &kp BSPC
+           &kp CAPS  &kp SLASH    &kp N4  &kp N5   &kp N6    &kp MINUS                       &none  &kp LEFT &kp DOWN &kp RIGHT &none   &none
+           &kp EQUAL &kp N0       &kp N1  &kp N2   &kp N3    &kp DOT   &kp LBKR   &kp RBKT   &none  &none    &none    &none     &none   &kp RSHFT
+                                          &kp LGUI &kp LCTRL &to 1     &kp RET    &kp SPACE  &to 2  &kp LALT &kp RGUI
             >;
 
 
@@ -59,11 +59,11 @@
             // |  SHFT  |         |    !   |   @  |   #   |      |  LBRC  |  |  RBRC  |      |       |       |      |       |       |
             //                             |      |       |      |       |  |         |      |       |       |
             bindings = <
-               &trans    &trans     &trans     &trans             &trans     &trans                        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4    &trans
-               &trans    &trans     &kp AMPS   &kp KP_MULTIPLY    &trans     &trans                        &bt BT_CLR    &trans        &trans         &trans         &trans          &trans
-               &trans    &kp EXCL   &kp DOLLAR &kp PRCNT          &kp CARET  &trans                        &trans        &trans        &trans         &trans         &trans          &trans
-               &trans    &trans     &kp EXCL   &kp AT             &kp HASH   &trans    &kp LBRC  &kp RBRC  &trans        &trans        &trans         &trans         &trans          &trans
-                                               &trans              &trans    &trans    &trans    &trans    &trans        &trans        &trans    
+             &kp ESC    &none     &none     &none          &none      &none                        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4    &kp BSPC
+             &kp TAB    &none     &kp AMPS   &kp STAR      &none      &none                        &bt BT_CLR    &none         &none          &none          &none           &kp BSPC
+             &kp CAPS   &kp EXCL  &kp DOLLAR &kp PRCNT     &kp CARET  &none                        &none         &none         &none          &none          &none           &none
+             &kp LSHFT  &none     &kp EXCL   &kp AT        &kp HASH   &none    &kp LBRC  &kp RBRC  &none         &none         &none          &none          &none           &kp RSHFT
+                                               &kp LGUI     &kp LCTRL  &to 1    &kp RET   &kp SPACE &to 2         &kp LALT      &kp RGUI   
             >;
 
 
